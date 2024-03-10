@@ -1,0 +1,378 @@
+@font-face {
+    font-family: a;
+    src: url(./font/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./font/Rejouice-Headline.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "a";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: white;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+#loader h3{
+    font-size: 2.5vw;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#cursor{
+    transform: translate(-50%,-50%);
+    height: 8vw;
+    width: 8vw;
+    background-color: rgb(255, 89, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    border-radius: 50%;
+    color: rgb(65, 64, 64);
+    position: absolute;
+    z-index: 9;
+}
+#cursor h4{
+    font-size: 1.2vw;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+
+}
+#page1-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+    color: #fff;
+    
+    
+}
+nav h4{
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+nav h3{
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+#page1-content h1{
+    color: white;
+    padding-bottom: 0;
+}
+#page1-content h1 span{
+        font-family: "rejoy";
+        padding: 0;
+        margin: 0;
+        font-size: 26vw;
+        font-weight: 100;
+        line-height: 24vw;
+
+}
+#page2{
+    min-height: 90vh;
+    width: 100%;
+    background-color: white;
+    padding: 0 3vw;
+    padding-top: 5vw;
+
+}
+#page2top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom:1.2vw;
+    
+}
+#page2top h3{
+    font-weight: 100;
+    font-size: 1.6vw;
+}
+#content h3{
+    font-size: 4vw;
+    font-weight: 100;
+    padding-top: 2vw;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: white;
+}
+#page3top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5VW 3VW;   
+    margin-bottom: 4vw;
+
+}
+#page3top h4{
+    font-weight: 100;
+    padding-bottom: 1.5vw;
+    
+}
+#page3top span{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: .2vw .4vw;
+    font-size: .8vw
+}
+#page3top h2{
+    font-size: 4vw;
+    font-weight: 100;
+    border-bottom: 3px solid black;
+}
+#page3content{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+
+
+}
+#page3content .box{
+    position: relative;
+}
+.box{
+    height: 100%;
+    width: 31.5vw;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3content .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+#page3content .box:hover img{
+    opacity: 0;
+}
+
+
+
+
+
+
+#page4{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    padding: 10vw 3vw;
+}
+#page4top{
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 1vw;
+
+}
+#page4top h3{
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+#page4middle{
+    height: 70vh;
+}
+#page4middle h3{
+    font-size: 4vw;
+    font-weight: 100;
+    padding-top: 2vw;
+}
+
+
+
+#page5{
+    height: 100vh;            
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#cursor2{
+    transform: translate(-50%,-50%);
+    height: 8vw;
+    width: 8vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(65, 64, 64);
+    position: absolute;
+    z-index: 9;
+}
+#cursor2 h2{
+    font-weight: 100;
+    color: white;
+    font-size: 1.2vw ;
+
+}
+#page5 video{
+    height: 100%;
+}
+#page5 svg{
+    position: absolute;
+    height: 64%;
+}
+#rotate{
+    animation: rotate 4s linear  infinite ;
+    box-shadow: 30px;    
+}
+@keyframes rotate {
+    from{
+
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+.text{
+    position: absolute;
+    z-index: 999;
+}
+.text h3{
+    font-weight: 100;
+    color: white;
+    font-size: 2vw;
+}
+.text h2{
+    font-weight: 100;
+    color: white;
+    font-size: 4vw;
+}
+
+
+
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding: 0 3vw;
+}
+
+#page6top{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 23vw;
+    margin-bottom: 4vw;
+}
+#page6top h2{
+    font-weight: 100;
+}
+#page6 h3{
+    font-size: 4vw;
+    font-weight: 100;
+    padding-top: 2vw;
+}
+
+
+
+
+
+
+
+
+
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+#page7 h1{
+    font-size: 11vw;
+    font-family: rejoy;
+    font-weight: 100;
+    width: 95%;
+    margin-left: 2%;
+    border-bottom: 1px solid black;
+}
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 12%;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 18vw;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
